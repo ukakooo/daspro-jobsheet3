@@ -6,7 +6,7 @@ public class Tugas1Jobsheet12 {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        //Data-data
+        //Variabel-variabel
         boolean penggunaanListrik;
         int tarifListrik;
         int jmlPenggunaanListrik;
