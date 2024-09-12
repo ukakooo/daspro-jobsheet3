@@ -5,7 +5,7 @@ public class Kafe12 {
         boolean keanggotaan;
         int jmlKopi, jmlTeh, jmlRoti;
         double hargaKopi = 12000.0, hargaTeh = 7000.0, hargaRoti = 20000.0;
-        float diskon = 10 / 100f;
+        float diskon = 10 / 100;
 
         System.out.print("Masukkan keanggotaan (true/false): ");
         keanggotaan = input.nextBoolean();
@@ -16,10 +16,13 @@ public class Kafe12 {
         System.out.print("Masukkan jumlah pembelian roti: ");
         jmlRoti = input.nextInt();        
         double totalHarga = (jmlKopi * hargaKopi) + (jmlTeh * hargaTeh) + (jmlRoti * hargaRoti);
-        double nominalBayar = totalHarga - (diskon * totalHarga);
+        byte totalByte = (byte) totalHarga;
+        double nominalBayar = totalByte - (diskon * totalByte);
+        int nominalInt = (int) nominalBayar;
         System.out.println("Keanggotaan pelanggan " + keanggotaan);
         System.out.println("Item pembelian " + jmlKopi + " kopi, " + jmlTeh + " teh, " + jmlRoti + " roti");
         System.out.println("Nominal bayar Rp " + nominalBayar);
+        System.out.println("Nominal bayar dalam bentuk int Rp " + nominalInt);          
     }
     
 }
