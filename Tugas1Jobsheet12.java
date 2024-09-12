@@ -7,8 +7,7 @@ public class Tugas1Jobsheet12 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in); 
         //Variabel-variabel        
-        int tarifListrik;
-        int jmlPenggunaanListrik;        
+        int tarifListrik, jmlPenggunaanListrik;        
 
         //Deklarasi
             System.out.print("Masukkan jumlah penggunaan listrik: ");
@@ -18,12 +17,14 @@ public class Tugas1Jobsheet12 {
         //Tarif Listrik bernominal Rp. 1500
 
         //Pengoperasian
+        boolean penggunaanListrik = jmlPenggunaanListrik >= 500;            
         double totalTagihanListrik = jmlPenggunaanListrik * tarifListrik;
-        boolean penggunaanListrik = jmlPenggunaanListrik >= 500;        
+          
 
         //Hasil pengoperasian dan deklarasi
-        System.out.println("Total Tagihan Listrik adalah: Rp." +totalTagihanListrik);
         System.out.println("Apakah jumlah penggunaan listrik melebihi 500? " +penggunaanListrik);
+        System.out.println("Total Tagihan Listrik adalah: Rp." +totalTagihanListrik);
+        
        
          
         
